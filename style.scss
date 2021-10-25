@@ -1,0 +1,45 @@
+$Font: 'Dancing Script', cursive;
+$blue: #083bd1;
+$green: #07d965;
+$text-color: #f8fc0a;
+$container-width: 100%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.virsus{
+    text-align: center;
+    background-color: $blue;
+    color: $text-color;
+    line-height: 4em;
+    font-family: $Font;
+}
+.contacts{
+    @include flexColumn();
+    line-height: 4em;
+}
+form{
+    width: 75%;
+    background-color: $green;
+    padding-left: 20px;
+    
+}
+aside{
+    background-color: $green;
+    border-right: 20px wheat;
+    width: 24.8%;
+    margin-right: 0.2%;
+    padding-left: 15px;
+}
+li{
+    list-style-type: none;
+}
+
